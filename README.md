@@ -8,39 +8,61 @@ superQ consists of three parts:
 
 1.Reads Preprocessing
 
-2.
+2.Main pipeline
+
+3.find Off targets
+
 ### Prerequisites
 
+Please be sure to install: 
+
+1. cutadapt (http://cutadapt.readthedocs.io/en/stable/)
+
+2. fastq-multx (https://github.com/brwnj/fastq-multx)
+
+3. Bowtie2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+
+4. macs2 (https://pypi.org/project/MACS2/)
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+git clone https://github.com/liumz93/superQ 
 ```
 
-And repeat
+
+## Running superQ
+
+### Samples demltiplex
+You can use FastMultx.py to demultiplex samples from a library
 
 ```
-until finished
+FastMultx.py -i INDEX -1 FASTQ_R1 -2 FASTQ_R2
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Index file must be look like:
 
 ```
-Give an example
+sample1	AGCG
+sample2	GCCT
+sample3	AGGA
+sample4	TCAG
 ```
+### Running superQ
+
+```
+superQ.py -i inputdir -m meta.txt
+```
+meta.txt file must be look like:
+
+```
+Library	Assembly	Chr	Start	End	Strand	MID	Primer	Adapter	Description
+sample1	hg38	chr11	36573328	36573417	-	AGCG	AGGATCTCACCCGGAACAGC	CCACGCGTGCTCTACA	RAG1A_as_bait_site
+sample2	hg38	chr11	36573328	36573417	-	GCCT	AGGATCTCACCCGGAACAGC	CCACGCGTGCTCTACA	RAG1A_as_bait_site
+sample3	hg38	chr11	36573328	36573417	-	AGGA	AGGATCTCACCCGGAACAGC	CCACGCGTGCTCTACA	RAG1A_as_bait_site
+sample4	hg38	chr11	36573328	36573417	-	TCAG	AGGATCTCACCCGGAACAGC	CCACGCGTGCTCTACA	RAG1A_as_bait_site
+```
+
 
 ## License
 
