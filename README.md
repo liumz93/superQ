@@ -4,13 +4,15 @@ superQ is a pipeline built for analysis  of PEM-seq data. PEM-seq is a next-gene
 
 ## Getting Started
 
-superQ consists of three parts:
+superQ consists of four parts:
 
 1.Reads Preprocessing
 
-2.Main pipeline
+2.a pipeline to call breakpoint of translocation (https://github.com/robinmeyers/transloc\_pipeline.git)
 
-3.find Off targets
+3.Deduplication according to random molecular barcode
+
+4.find small indels around cut site
 
 ### Prerequisites
 
