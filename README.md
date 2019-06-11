@@ -8,7 +8,7 @@ superQ consists of four parts:
 
 1.Reads Preprocessing
 
-2.a pipeline to call breakpoint of translocation (https://github.com/robinmeyers/transloc_pipeline)
+2.a pipeline to call breakpoint of translocation, please install translocpipeline according to https://github.com/robinmeyers/transloc_pipeline.
 
 3.Deduplication according to random molecular barcode
 
