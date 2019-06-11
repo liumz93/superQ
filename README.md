@@ -8,7 +8,7 @@ superQ consists of four parts:
 
 1.Reads Preprocessing
 
-2.a pipeline to call breakpoint of translocation (https://github.com/robinmeyers/transloc\_pipeline.git)
+2.a pipeline to call breakpoint of translocation (https://github.com/robinmeyers/transloc_pipeline)
 
 3.Deduplication according to random molecular barcode
 
@@ -72,4 +72,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-This pipeline is developed based on transloc\_pipeline(https://github.com/robinmeyers/transloc\_pipeline.git).
+This pipeline is developed based on transloc\_pipeline(https://github.com/robinmeyers/transloc_pipeline).
