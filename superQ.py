@@ -73,7 +73,7 @@ class runPipeline(object):
         wd="./pipeline_results",
         inputdir=None,
         thread=1,
-        pipeline_opt="--random-barcode 17 --find-adapter 1",
+        pipeline_opt="--random-barcode 17",
         bl = "17"):
         """
         General initialization function for import and command line
