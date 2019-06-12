@@ -46,8 +46,8 @@ class runPipeline(object):
              help= "Path to metadata file")
         optparser.add_option('-w','--workdir', dest="workdir", default= "./pipeline_results",
              help= "[facultative] Path to run the pipeline (default: ./results)")
-        optparser.add_option('-p', '--pipeline_opt', dest="pipeline_opt", default= "--random-barcode 17 --find-adapter 1",
-             help= "[facultative] pipeline options for running TranslocPipeline.pl (default: --random-barcode 17 --find-adapter 1) use TranslocPipeline.pl -h to check")
+        optparser.add_option('-p', '--pipeline_opt', dest="pipeline_opt", default= "--random-barcode 17",
+             help= "[facultative] pipeline options for running TranslocPipeline.pl (default: --random-barcode 17) use TranslocPipeline.pl -h to check")
         optparser.add_option('-t', '--thread', dest="thread", default=1,
              help= "[facultative] Number of thread to use (default: 1)")
         optparser.add_option('-n', dest = 'BarcodeLength', type = str, default=17,
