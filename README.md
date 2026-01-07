@@ -66,10 +66,6 @@ sample4	hg38	chr11	36573328	36573417	-	TCAG	AGGATCTCACCCGGAACAGC	CCACGCGTGCTCTAC
 ```
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
 
 This pipeline is developed based on transloc\_pipeline(https://github.com/robinmeyers/transloc_pipeline).
